@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html>
+<html lang="en-us">
 <head>
-	<title>Hangman</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="game.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DisneyPixar Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+    body {
+        background-image: url("cloudy-day.png"); 
+    }
+</style>
 </head>
+
 <body>
+    <header>
+        <div id="header">
+            <div class="row">            
+                <div class="col-sm-12">
+                    <img src="disney-pixar2.png" class="center-block" alt="Disney Pixar" width="auto" height="auto">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">            
+            <div class="col-sm-12">
+                <img src="etch a sketch.png" class="center-block" alt="Etch A Sketch" width="auto" height="auto">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">            
+            <div class="col-sm-6">
+                <h3 id="current">Current word:</h3>
+                <br>
+                <h3 id="currentWord"></h3>
+                <br>
+                <h3 id="orange"> Number of guesses remaining:</h3>
+                <br>
+                <h3 id="guesses-remaining"></h3>
+                <br>
+            </div>
+            <div class="col-sm-6">
+                <h3 id="green">
+                Letters already selected:</h3>
+                <h3 id="used-letters"> </h3>
+                <h3 id="g-letters"></h3>
+                <br>
+                <br>
+                <h3 id="red">Score:</h3>
+                <h3 id="score"></h3>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Copyright &copy; 2017 Paul Thorman </p>
+    </div>
+</footer>
 
 </body>
 </html>
