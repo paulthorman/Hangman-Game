@@ -60,13 +60,13 @@ document.onkeyup = function(event){
                 setTimeout(function(){
                     alert("To infinity, and beyond!");   
                 }, 500);
-                // Increasing score if randome word is guessed
+                // Increasing score if random word is guessed
                 score++;
                 // Update score
                 document.getElementById('score').innerHTML = score;
             // if no more attempts left alert player they lost and the word 
             } else if(attempts === 0) {
-                alert("Reach for the sky, the word was: " + randomWord);
+                alert("Reach for the sky, the movie was: " + randomWord);
             }
 
 
@@ -88,7 +88,37 @@ document.onkeyup = function(event){
                 setTimeout(function(){
                  document.getElementById('currentWord').innerHTML = dash;   
                  }, 500)
-                }
+            }
+
+            //change hangman photos based on incorrect answer
+                      if('guesses-remaining' === 1){
+                        $('.1').show();
+                        $('.0, .2, .3, .4, .5, .6, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 2){
+                        $('.2').show();
+                        $('.0, .1, .3, .4, .5, .6, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 3){
+                        $('.3').show();
+                        $('.0, .1, .2, .4, .5, .6, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 4){
+                        $('.4').show();
+                        $('.0, .1, .2, .3, .5, .6, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 5){
+                        $('.5').show();
+                        $('.0, .1, .2, .3, .4, .6, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 6){
+                        $('.6').show();
+                        $('.0, .1, .2, .3, .4, .5, .7, .8, .9, .10').hide();
+                      }else if(guessCount === 7){
+                        $('.7').show();
+                        $('.0, .1, .2, .3, .4, .5, .6, .8, .9, .10').hide();
+                      }else if(guessCount === 8){
+                        $('.8').show();
+                        $('.0, .1, .2, .3, .4, .5, .6, .7, .9, .10').hide();
+                      }else if(guessCount === 9){
+                        $('.9').show();
+                        $('.0, .1, .2, .3, .4, .5, .6, .7, .8, .10').hide();
+                      }
 
             }
 
