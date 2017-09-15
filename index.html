@@ -13,6 +13,7 @@
         background-image: url("cloudy-day.png"); 
     }
 </style>
+
 </head>
 
 <body>
@@ -29,7 +30,7 @@
     <div class="container">
         <div class="row">            
             <div class="col-sm-12">
-                <img src="etch a sketch.png" class="center-block" alt="Etch A Sketch" width="auto" height="auto">
+                <img src="assets/images/etch a sketch.png" class="center-block" alt="Etch A Sketch" id="hangman" width="auto" height="400px">
             </div>
         </div>
     </div>
@@ -40,7 +41,6 @@
                 <h3 id="current">Current word:</h3>
                 <br>
                 <h3 id="currentWord"></h3>
-                <br>
                 <h3 id="orange"> Number of guesses remaining:</h3>
                 <br>
                 <h3 id="guesses-remaining"></h3>
@@ -52,7 +52,6 @@
                 <h3 id="used-letters"> </h3>
                 <h3 id="g-letters"></h3>
                 <br>
-                <br>
                 <h3 id="red">Score:</h3>
                 <h3 id="score"></h3>
             </div>
@@ -60,6 +59,8 @@
     </div>
 
 <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+<audio id="music" loop src="assets/images/youve got a friend.mp3" autoplay> </audio>
 
 <footer class="footer">
     <div class="container">
